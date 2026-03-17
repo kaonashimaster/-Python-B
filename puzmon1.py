@@ -18,10 +18,11 @@ def main():
 
     print("***Puzzle & Monsters***")
     
-    go_dungeon(player_name)
+    #倒したモンスターの数を受け取る
+    defeated_monsters = go_dungeon(player_name)
 
     print("***GAME CLEARED!!***")
 
-    print("倒したモンスター数=", go_dungeon(player_name))
+    print(f"倒したモンスター数={defeated_monsters}")
 #main関数呼び出し
 main()
