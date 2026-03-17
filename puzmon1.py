@@ -10,17 +10,18 @@
 def go_dungeon(player_name):
     print(f"{player_name}はダンジョンに到着した")
     print(f"{player_name}はダンジョンを制覇した")
-    return 5
+    defeated_monsters = 5
+    return defeated_monsters
 
 def main():
     player_name = input("プレイヤー名を入力してください> ")
 
     print("***Puzzle & Monsters***")
     
-    go_dungeon()
+    go_dungeon(player_name)
 
     print("***GAME CLEARED!!***")
 
-    print("倒したモンスター数=5")
+    print("倒したモンスター数=", go_dungeon(player_name))
 #main関数呼び出し
 main()
